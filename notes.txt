@@ -1,0 +1,40 @@
+Notes and reflections on problem solving: 
+
+1. It's easy to fall into the habit of jumping straight into coding, especially as fluency increases... don't do this; 
+	a systematic method to rely on during highly complex problems is important
+
+2. The first coding draft doesn't have to have quality code; it has to solve the problem. The first draft is about
+	generating a solution and implementing an algorithm. Refactor later. 
+
+3. First, understand the problem and test your understanding with 'spikes' (a term borrowed from course 120). Then write 	first draft (the first draft will probably be one of the spikes). Next, refactor code. Third, refactor code according
+	to other programmer's code. Finally, analyze for performance bottlenecks (Most of the time, I see this opportunity when encountering or using brute force methods; usually there is a more clever solution)
+
+4. Steps to solving problems (the best parts of the general approach to problem solving from launch school): 
+	Understand the Problem: 
+		Note the explicit requirements that are stated
+		Capture the requirements implicit in the nature of the problem
+		Identify and define important terms
+		Ask questions to verify understanding
+	Examples/Test Cases
+		Visualize and understand the input and the output
+		Test cases serve two purposes: 
+			- Help you understand problem
+			- Verify your solution
+		Edge cases
+			- data types
+			- nil or empty
+			- repetition
+			- violate requirements
+		Failures/Bad input
+			- raise exceptions/errors
+			- return a special value
+
+	Data Structures
+		Input Data
+		Can the rules or requirements be modeled as data structure (e.g. matching conditions with a hash)
+		Based on the properties of each data structure, which is/are most ANALOGOUS to the problem?
+
+	Abstractions
+		- Rely on built-in abstractions in the language
+		- Don't solve big problems: break into smaller problems: Single purpose methods and classes
+		- Solve a problem in 1 or 2 sentences, if you can't raise level of abstractions
