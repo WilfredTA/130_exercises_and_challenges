@@ -19,7 +19,6 @@ class Series
 		dig_array.each_cons(length_of_series) do |series|
 			collection << series
 		end
-
 		collection
 	end
 
