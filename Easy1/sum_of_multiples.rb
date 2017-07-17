@@ -41,7 +41,8 @@ class SumOfMultiples
 	end
 
 	def self.to(limit)
-
+		sum = SumOfMultiples.new(*@@numbers_for_multiples)
+		sum.to(limit)		
 	end
 
 	private
@@ -49,11 +50,13 @@ class SumOfMultiples
 	def multiple?(test_number)
 		flag = nil
 		nums.each do |number|
-			
+			flag = true if test_number % number == 0
 		end
+		flag
+	end
 
 end
 
 
-sums = SumOfMultiples.new(3, 5)
-p sums.nums
+
+#p SumOfMultiples.to(20)
