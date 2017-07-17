@@ -38,3 +38,15 @@ Notes and reflections on problem solving:
 		- Rely on built-in abstractions in the language
 		- Don't solve big problems: break into smaller problems: Single purpose methods and classes
 		- Solve a problem in 1 or 2 sentences, if you can't raise level of abstractions
+
+
+5. Some notes on blocks: 
+	Can pass blocks into methods two ways: Implicitly or explicitly
+		-Implicitly with the yield keyword
+		-Explicitly by binding a block to a parameter with a '&' e.g. &block --- later, use 'block.call'
+			- block is scoped within the scope it is initialized in: it is a local variable
+
+	Block local variables and method local variables (otherwise known as parameters)
+	Blocks have lenient 'arity'
+	Methods execute on the lines of their definition, not invocation (important when writing code execution traces)
+

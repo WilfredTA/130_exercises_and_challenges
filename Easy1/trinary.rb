@@ -26,7 +26,7 @@ class Trinary
 	def to_decimal
 		sum = 0
 		return sum if invalid_input?
-		trinary.chars.reverse.each_with_index do |char, idx|
+		trinary.chars.reverse.each_with_index do |char, idx| # Reverse since each_with_index counts index from right -> left, not left -> right
 			sum += char.to_i * (3 ** idx)
 			puts idx
 		end
