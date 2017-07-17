@@ -54,7 +54,6 @@ class SumOfMultiples
 		end
 		flag
 	end
-
 end
 
 
