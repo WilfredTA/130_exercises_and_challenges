@@ -1,8 +1,11 @@
 require 'minitest/autorun'
+require 'minitest/reporters'
 require_relative 'point_mutations'
+Minitest::Reporters.use!
 
 class DNATest < Minitest::Test
   def test_no_difference_between_empty_strands
+    skip
     assert_equal 0, DNA.new('').hamming_distance('')
   end
 

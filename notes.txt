@@ -6,7 +6,7 @@ Notes and reflections on problem solving:
 2. The first coding draft doesn't have to have quality code; it has to solve the problem. The first draft is about
 	generating a solution and implementing an algorithm. Refactor later. 
 
-3. First, understand the problem and test your understanding with 'spikes' (a term borrowed from course 120). Then write 	first draft (the first draft will probably be one of the spikes). Next, refactor code. Third, refactor code according
+3. First, understand the problem and test your understanding with 'spikes' (a term borrowed from course 120). Write 	first draft (the first draft will probably be one of the spikes). Next, refactor code. Third, refactor code according
 	to other programmer's code. Finally, analyze for performance bottlenecks (Most of the time, I see this opportunity when encountering or using brute force methods; usually there is a more clever solution)
 
 4. Steps to solving problems (the best parts of the general approach to problem solving from launch school): 
@@ -49,4 +49,10 @@ Notes and reflections on problem solving:
 	Block local variables and method local variables (otherwise known as parameters)
 	Blocks have lenient 'arity'
 	Methods execute on the lines of their definition, not invocation (important when writing code execution traces)
+
+6. I am reminded of OOP design approach wherein the classes of each noun are created and then connected with an orchestration engine. It is during course 120 during orchestration engine design when I realized the power of writing high level methods which work by calling multiple sub-methods which do not yet exist. The top down approach of implementing the higher-level method and then implementing the methods which it relies on is a great way to maintain a model of the big picture and it precludes the writing of arbitrary lower-level methods. This is because, given a higher-level picture, which methods are needed is already known, and there is no guesswork involved (The top down approach, therefore, is just one way that the "intentional coding" philosophy is practically instantiated.)
+
+7. Unexpectedly important topics is the relationship between variable scoping rules and blocks and procs, as well as how variable shadowing occurs given the scoping rules and blocks and procs.
+
+8. Means of optimizing code performance are becoming more and more clear, and although optimizing performance is the fourth step in writing code per note number 3, it is actually proving to be a useful criterion for determining how to refactor in steps 2 and 3. This is because better performance *seems* to be correlated with simpler code devoid of superfluous steps, as well as clever code that utilizes implicit rules that already exist in the data structures being dealt with, rather than explicitly instantiating rules when the need is not there. 
 
