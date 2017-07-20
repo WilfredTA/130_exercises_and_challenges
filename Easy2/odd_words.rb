@@ -7,10 +7,12 @@
 # manage your energy
 # Think about abstractions
 
+# DONT UNDERESTIMATE
 # If a problem seems too easy, you either underestimated the code
 # or you're applying for the wrong company! If you are applying for a good company
 # it is certain that the code challenge will not be easy
 
+# READ THE DESCRIPTION AND PRODUCE OUTLINE
 # Sometimes the problem description is so large, it takes 2 minutes to read.
 # You will probably want to refer to problem descirption multiple times throughout
 # writing the program. It is very hard to sift thru the large description
@@ -18,20 +20,19 @@
 # This is solved with an outline.
 
 
-# If there is any ambiguity, you should ask the questions up front
-
-
+#PLAN/ALGORITHM
 # The plan/algorithm is important. Don't write everything out/go thru every single 
 # detail; have a balance of general and specific. Verify with test cases, either
 # ones that have come with the problem or not. 
 
+# CREATE TEST CASES AND USE THEM
 # When trying to use test cases, think about the happy path (most obvious way to make test work)
 # as well as how to deal with the fail paths and edge cases (edge cases are valid inputs but somewhat
 # on the edge of being error)
-
 # Once you have test cases, use your test cases to verify the plan/algorithm as you implement
 # it.
 
+# ABSTRACT: ONE PROBLEM IS REALLY MANY PROBLEMS
 # Abstractions. Part of the solution is to break up the solution into smaller
 # problems that need to be solved.
 
@@ -52,33 +53,6 @@
 # BONUS POINTS: The characters must be read and printed one at a time.
 
 
-
-
-# Program description
-
-# StringReverser.reverse takes a string as input and splits the words in the string
-# into an array. It then returns the value of calling StringReverser.fix_individual_terminating_point on the array of words.
-
-
-# StringReverser.fix_individual_terminating_point takes a block and an array. Once the array and block are passed to the method,
-# the method stores the block as a variable reverser_block and then
-# the method checks if either the array contains a period element, or if the last element of the array contains 
-# a period element.
-#
-# If the former, the period is its own element in the array, the period element is deleted from the array, 
-# Then the new array, as well as the block, 
-# is passed to a second method. The second method passes 
-# the array into the block (which reverses every odd word) and turns the transformed array into a string.
-# The return value of the block is stored as a variable in the method. 
-# The method appends a period to the last element in the string of reversed words and returns the
-# transformed string
-#
-# If the latter, the period is the last element of the last element of the array.
-# The period is deleted, and then the block and new array are passed to a second method.
-# The second method passes the array into the block, which transforms the array, and then
-# turns the array into a string. The block returns this string.
-# The method stores the string as a variable and then appends a period to the 
-# last element of the string.
 
 # Requirements of program
 # Input: 
@@ -159,5 +133,32 @@ class StringReverser
 end
 
 p StringReverser.reverse("whats the matter with kansas lolol haha not my problem .")
+
+# Program description
+
+# StringReverser.reverse takes a string as input and splits the words in the string
+# into an array. It then returns the value of calling StringReverser.fix_individual_terminating_point on the array of words.
+
+
+# StringReverser.fix_individual_terminating_point takes a block and an array. Once the array and block are passed to the method,
+# the method stores the block as a variable reverser_block and then
+# the method checks if either the array contains a period element, or if the last element of the array contains 
+# a period element.
+#
+# If the former, the period is its own element in the array, the period element is deleted from the array, 
+# Then the new array, as well as the block, 
+# is passed to a second method. The second method passes 
+# the array into the block (which reverses every odd word) and turns the transformed array into a string.
+# The return value of the block is stored as a variable in the method. 
+# The method appends a period to the last element in the string of reversed words and returns the
+# transformed string
+#
+# If the latter, the period is the last element of the last element of the array.
+# The period is deleted, and then the block and new array are passed to a second method.
+# The second method passes the array into the block, which transforms the array, and then
+# turns the array into a string. The block returns this string.
+# The method stores the string as a variable and then appends a period to the 
+# last element of the string.
+
 
 
