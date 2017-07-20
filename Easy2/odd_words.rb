@@ -93,6 +93,7 @@
 
 class StringReverser
 
+
 	def self.reverse(string)
 		array_of_words = string.split(' ')
 
@@ -102,8 +103,6 @@ class StringReverser
 			end.join(' ')
 		end
 	end
-
-	private
 
 	def self.odd_word(word, array)
 		if array.index(word) % 2 != 0
@@ -132,7 +131,12 @@ class StringReverser
 	end
 end
 
-p StringReverser.reverse("whats the matter with kansas lolol haha not my problem")
+p StringReverser.reverse("whats the matter with kansas .")
+p StringReverser.reverse("    whats the matter with kansas .")
+p StringReverser.reverse(" whats the matter with kansas.")
+p StringReverser.reverse("whats the matter with kansas")
+
+
 
 # Program description
 
