@@ -117,8 +117,6 @@
 # is to delete the dot and then reverse then append at the end.
 
 
-require 'pry'
-
 class StringReverser
 
 	def self.reverse(string)
@@ -157,11 +155,6 @@ class StringReverser
 		reversed_odd_words = yield(array)
 		reversed_odd_words[-1] += '.'
 		reversed_odd_words
-	end
-
-	def self.validate_input
-
-
 	end
 end
 
