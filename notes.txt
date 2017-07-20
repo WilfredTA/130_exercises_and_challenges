@@ -56,3 +56,5 @@ Notes and reflections on problem solving:
 
 8. Means of optimizing code performance are becoming more and more clear, and although optimizing performance is the fourth step in writing code per note number 3, it is actually proving to be a useful criterion for determining how to refactor in steps 2 and 3. This is because better performance *seems* to be correlated with simpler code devoid of superfluous steps, as well as clever code that utilizes implicit rules that already exist in the data structures being dealt with, rather than explicitly instantiating rules when the need is not there. 
 
+9. I tend to NOT take advantage of mathematical shortcuts, partly because I don't recognize the mathematical principles even when looking at a problem in which a mathematical operation would be useful. This leads to the creation of overly-complex work-arounds... Lesson: Look for the mathematical solution when dealing with number problems.
+
