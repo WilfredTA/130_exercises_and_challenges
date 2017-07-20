@@ -121,7 +121,7 @@ class StringReverser
 			array[-1].chop!
 			reverse_words_then_add_period(array, &reverser_block)
 		else
-			yield(array)
+			raise RuntimeError, "You must have a period at the end of your sentence."
 		end
 	end
 
@@ -132,7 +132,7 @@ class StringReverser
 	end
 end
 
-p StringReverser.reverse("whats the matter with kansas lolol haha not my problem .")
+p StringReverser.reverse("whats the matter with kansas lolol haha not my problem")
 
 # Program description
 
