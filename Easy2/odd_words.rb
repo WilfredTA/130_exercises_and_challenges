@@ -54,7 +54,7 @@
 
 
 
-# Requirements of program
+# Requirements of program / Outline of program
 # Input: 
 # 	At least 1 word, no limit to words
 # 	Spaces between words: at least 1, no limit to spaces
