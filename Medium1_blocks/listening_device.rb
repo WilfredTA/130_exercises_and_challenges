@@ -8,7 +8,7 @@ class Device
   end
 
   def listen
-  	record(yield) if block_given?
+    record(yield) if block_given?
   end
 
   def play
@@ -17,6 +17,6 @@ class Device
 end
 
 listener = Device.new
-listener.listen { "Hello World!" }
-listener.listen
+listener.listen #{ "Hello World!" }
+listener.listen #{"Another item"}
 p listener.play # Outputs "Hello World!"
