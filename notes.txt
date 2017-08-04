@@ -58,3 +58,6 @@ Notes and reflections on problem solving:
 
 9. I tend to NOT take advantage of mathematical shortcuts, partly because I don't recognize the mathematical principles even when looking at a problem in which a mathematical operation would be useful. This leads to the creation of overly-complex work-arounds... Lesson: Look for the mathematical solution when dealing with number problems.
 
+10. Every method or function of any kind returns something. Always pay attention to what it returns. Some functions also produce side effects. If the function's purpose is its side effect, make sure the return value does not interfere.
+
+11. When refactoring code: Can I solve it in less lines? Can I solve it with less functions? What do the dependencies look like? Can the dependencies be lessened? Are methods and classes serving a single purpose? Is there a way to instantiate this behavior or attribute without hardcoding it?
